@@ -1,0 +1,21 @@
+﻿生成启动时间为 2019/4/3 23:37:04。
+     1>项目“D:\dpfnmt\dpfnmt\4-3（模板）\4-3（模板）\4-3（模板）.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Test.cpp
+         Test.cpp
+     1>d:\dpfnmt\dpfnmt\4-3（模板）\4-3（模板）\test.cpp(137): warning C4018: “<”: 有符号/无符号不匹配
+                 d:\dpfnmt\dpfnmt\4-3（模板）\4-3（模板）\test.cpp(136): 编译类 模板 成员函数“void Vector<int>::Print(void)”时
+                 d:\dpfnmt\dpfnmt\4-3（模板）\4-3（模板）\test.cpp(181): 参见对正在编译的函数 模板 实例化“void Vector<int>::Print(void)”的引用
+                 d:\dpfnmt\dpfnmt\4-3（模板）\4-3（模板）\test.cpp(175): 参见对正在编译的类 模板 实例化“Vector<int>”的引用
+     1>d:\dpfnmt\dpfnmt\4-3（模板）\4-3（模板）\test.cpp(144): warning C4018: “<”: 有符号/无符号不匹配
+                 d:\dpfnmt\dpfnmt\4-3（模板）\4-3（模板）\test.cpp(143): 编译类 模板 成员函数“void Vector<double>::Print2(void)”时
+                 d:\dpfnmt\dpfnmt\4-3（模板）\4-3（模板）\test.cpp(193): 参见对正在编译的函数 模板 实例化“void Vector<double>::Print2(void)”的引用
+                 d:\dpfnmt\dpfnmt\4-3（模板）\4-3（模板）\test.cpp(187): 参见对正在编译的类 模板 实例化“Vector<double>”的引用
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\dpfnmt\dpfnmt\4-3（模板）\Debug\4-3（模板）.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\dpfnmt\dpfnmt\4-3（模板）\Debug\4-3（模板）.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\dpfnmt\dpfnmt\4-3（模板）\Debug\4-3（模板）.lib" /MACHINE:X86 Debug\Test.obj
+         4-3（模板）.vcxproj -> D:\dpfnmt\dpfnmt\4-3（模板）\Debug\4-3（模板）.exe
+     1>已完成生成项目“D:\dpfnmt\dpfnmt\4-3（模板）\4-3（模板）\4-3（模板）.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.16
