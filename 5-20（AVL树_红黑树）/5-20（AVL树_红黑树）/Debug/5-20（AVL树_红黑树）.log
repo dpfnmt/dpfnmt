@@ -1,0 +1,35 @@
+﻿生成启动时间为 2019/5/21 3:33:21。
+     1>项目“D:\dpfnmt\dpfnmt\5-20（AVL树_红黑树）\5-20（AVL树_红黑树）\5-20（AVL树_红黑树）.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt AVLtree.cpp
+         AVLtree.cpp
+     1>d:\dpfnmt\dpfnmt\5-20（avl树_红黑树）\5-20（avl树_红黑树）\avltree.h(35): error C2661: “AVLTreeNode<K,V>::AVLTreeNode”: 没有重载函数接受 2 个参数
+                 with
+                 [
+                     K=int
+         ,            V=int
+                 ]
+                 d:\dpfnmt\dpfnmt\5-20（avl树_红黑树）\5-20（avl树_红黑树）\avltree.h(32): 编译类 模板 成员函数“bool AVLTree<int,int>::Insert(const K &,const V &)”时
+                 with
+                 [
+                     K=int
+         ,            V=int
+                 ]
+                 d:\dpfnmt\dpfnmt\5-20（avl树_红黑树）\5-20（avl树_红黑树）\avltree.h(226): 参见对正在编译的函数 模板 实例化“bool AVLTree<int,int>::Insert(const K &,const V &)”的引用
+                 with
+                 [
+                     K=int
+         ,            V=int
+                 ]
+                 d:\dpfnmt\dpfnmt\5-20（avl树_红黑树）\5-20（avl树_红黑树）\avltree.h(223): 参见对正在编译的类 模板 实例化“AVLTree<int,int>”的引用
+     1>d:\dpfnmt\dpfnmt\5-20（avl树_红黑树）\5-20（avl树_红黑树）\avltree.h(60): error C2661: “AVLTreeNode<K,V>::AVLTreeNode”: 没有重载函数接受 2 个参数
+                 with
+                 [
+                     K=int
+         ,            V=int
+                 ]
+     1>已完成生成项目“D:\dpfnmt\dpfnmt\5-20（AVL树_红黑树）\5-20（AVL树_红黑树）\5-20（AVL树_红黑树）.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.25

@@ -195,7 +195,7 @@ private:
 	Node* _root;
 };
 
-int TestBSTree()
+void TestBSTree()
 {
 	/*BSTree<int> t;
 	t.Insert(3);
@@ -232,5 +232,5 @@ int TestBSTree()
 		t.Erase(e);
 	}
 	t.InOrder();
-	return 0;
+	//return 0;
 }
