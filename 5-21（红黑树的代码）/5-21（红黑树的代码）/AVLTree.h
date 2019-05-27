@@ -202,7 +202,7 @@ public:
 		parent->_bf = SubR->_bf = 0;
 	}
 
-	void RotateLR(Node* parent)
+	void RotateLR(Node* parent)//×óÓÒË«Ðý
 	{
 		Node* SubL = parent->_left;
 		Node* SubLR = SubL->_right;
@@ -227,7 +227,7 @@ public:
 		SubLR->_bf = 0;
 	}
 
-	void RotateRL(Node* parent)
+	void RotateRL(Node* parent) //ÓÒ×óË«Ðý
 	{
 		Node* SubR = parent->_right;
 		Node* SubRL = SubR->_left;
@@ -272,7 +272,7 @@ public:
 		return _IsBlanace(_root);
 	}
 
-	bool _IsBlanace(Node* root)
+	bool _IsBlanace(Node* root)   //ÅÐ¶ÏÆ½ºâ
 	{
 		if (root == nullptr)
 			return true;
