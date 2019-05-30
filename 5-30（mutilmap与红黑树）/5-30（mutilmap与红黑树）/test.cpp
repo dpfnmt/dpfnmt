@@ -1,7 +1,6 @@
 #include<iostream>
 using namespace std;
 #include<map>
-#include<vector>
 #include<string>
 
 void test_map1()
