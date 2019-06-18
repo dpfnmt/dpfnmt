@@ -6,6 +6,8 @@
 #include "MFCApp1.h"
 #include "MFCApp1Dlg.h"
 #include "afxdialogex.h"
+#include<iostream>
+using namespace std;
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -206,7 +208,7 @@ void CMFCApp1Dlg::OnBnClickedButton4()
 	//UpdateData(FALSE);
 	m_StrzDoulb1 = m_IOData;
 	m_data2 = 1;
-	m_data1 += 1;
+	m_data1 = 0;
 	UpdateData(FALSE);
 }
 
@@ -214,8 +216,10 @@ void CMFCApp1Dlg::OnBnClickedButton4()
 void CMFCApp1Dlg::OnBnClickedButton15()
 {
 	// TODO:  在此添加控件通知处理程序代码
-	m_StrzDoulb2 = m_IOData.Right(m_data1);
+
+	
 	m_double1 = atof(m_StrzDoulb1);
+	m_StrzDoulb2 = m_IOData.Right(m_data1);
 	m_double2 = atof(m_StrzDoulb2);
 	double m_double3;
 	switch (m_data2)
@@ -230,7 +234,14 @@ void CMFCApp1Dlg::OnBnClickedButton15()
 		m_double3 = m_double1 * m_double2;
 		break;
 	case 4:
-		m_double3 = m_double1 / m_double2;
+		if (m_double2 == 0)
+		{
+			printf("被除数不能为0 %s",m_double3);
+		}
+		else
+		{
+			m_double3 = m_double1 / m_double2;
+		}
 		break;
 	default:
 		break;
@@ -340,7 +351,7 @@ void CMFCApp1Dlg::OnBnClickedButton8()
 	m_IOData += "-";
 	m_StrzDoulb1 = m_IOData;
 	m_data2 = 2;
-	m_data1 += 1;
+	m_data1 = 0;
 	UpdateData(FALSE);
 }
 
@@ -352,7 +363,7 @@ void CMFCApp1Dlg::OnBnClickedButton12()
 	m_IOData += "*";
 	m_StrzDoulb1 = m_IOData;
 	m_data2 = 3;
-	m_data1 += 1;
+	m_data1 = 0;
 	UpdateData(FALSE);
 }
 
@@ -365,7 +376,7 @@ void CMFCApp1Dlg::OnBnClickedButton16()
 	UpdateData(FALSE);
 	m_StrzDoulb1 = m_IOData;
 	m_data2 = 4;
-	m_data1 += 1;
+	m_data1 = 0;
 	UpdateData(FALSE);
 }
 
@@ -386,6 +397,12 @@ void CMFCApp1Dlg::OnBnClickedButton18()
 {
 	// TODO:  在此添加控件通知处理程序代码
 	UpdateData(TRUE);
+	m_data1 = 0;
+	m_data2 = 0;
+	m_double1 = 0;
+	m_double2 = 0;
 	m_IOData = " ";
+	m_StrzDoulb1 = " ";
+	m_StrzDoulb2 = " ";
 	UpdateData(FALSE);
 }
